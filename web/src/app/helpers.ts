@@ -1,9 +1,9 @@
 import * as tf from "@tensorflow/tfjs";
 
 const modelPath =
-  "https://raw.githubusercontent.com/raj-pulapakura/Comment-Toxicity-Checker-Model/master/ctc/model.json";
+  "https://raw.githubusercontent.com/raj-pulapakura/Comment-Toxicity-Checker/master/model/model.json";
 const vocabPath =
-  "https://raw.githubusercontent.com/raj-pulapakura/Comment-Toxicity-Checker-Model/master/ctc/tokenizer_dictionary.json";
+  "https://raw.githubusercontent.com/raj-pulapakura/Comment-Toxicity-Checker/master/model/tokenizer_dictionary.json";
 
 async function loadTokenizer() {
   let tknzr = await fetch(vocabPath);

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fira } from "../layout";
+import { fira } from "../app/layout";
 
 export default function ToxicityClass(props: { label: string; value: number }) {
   const [width, setWidth] = useState(0);
@@ -11,7 +11,6 @@ export default function ToxicityClass(props: { label: string; value: number }) {
   }, [props.value]);
 
   return (
-    // <div className="flex gap-5 items-center">
     <div className="w-full flex mb-4 items-center gap-7">
       <div className="w-[20%]">
         <h3 className={`${fira.className} `}>{props.label}</h3>

@@ -1,8 +1,9 @@
 "use client";
 
 import { KeyboardEvent, useState } from "react";
-import { predict } from "./helpers";
-import ToxicityClass from "./components/ToxicityClass";
+import { predict } from "../helpers";
+import ToxicityClass from "../components/ToxicityClass";
+import InformationButton from "@/components/InformationButton";
 
 export default function Home() {
   let [toxicState, setToxicState] = useState<number>(0);
@@ -31,10 +32,11 @@ export default function Home() {
 
   return (
     <main>
+      <InformationButton />
       <h1 className="font-bold text-3xl text-center mt-20">
         Comment Toxicity Checker
       </h1>
-      <div className="w-full flex flex-col justify-center items-center">
+      <section className="w-full flex flex-col justify-center items-center">
         <div style={{ minWidth: "450px" }} className="w-[60%]">
           <p className="text-lg text-center mt-4 text-gray-400">
             Make the world a kinder place by checking your sentences for
@@ -53,7 +55,7 @@ export default function Home() {
           <ToxicityClass label="insult" value={insultState} />
           <ToxicityClass label="identity hate" value={identityState} />
         </div>
-      </div>
+      </section>
     </main>
   );
 }

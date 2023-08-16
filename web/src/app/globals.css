@@ -41,3 +41,7 @@ body {
   /* Microsoft Edge */
   color: red;
 }
+
+.progressPart {
+  transition: width 2s;
+}

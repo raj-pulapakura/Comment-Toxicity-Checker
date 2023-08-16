@@ -36,8 +36,9 @@ export default function Home() {
       <h1 className="font-bold text-3xl text-center mt-20">
         Comment Toxicity Checker
       </h1>
+      <p className="text-center mt-3 text-gray-400">By Raj Pulapakura</p>
       <section className="w-full flex flex-col justify-center items-center">
-        <div style={{ minWidth: "450px" }} className="w-[60%]">
+        <div style={{ minWidth: "450px" }} className="w-[70%]">
           <p className="text-lg text-center mt-4 text-gray-400">
             Make the world a kinder place by checking your sentences for
             toxicity.
@@ -45,9 +46,10 @@ export default function Home() {
           <input
             autoFocus
             placeholder="Start typing..."
-            className="w-full autofocus text-2xl my-20 outline-0 bg-transparent placeholder:text-gray-700"
+            className="w-full autofocus text-2xl mt-20 mb-3 outline-0 bg-transparent placeholder:text-gray-700"
             onKeyDown={onInputKeyDown}
           />
+          <p className="text-gray-700 mb-20">Click Enter to run the checker.</p>
           <ToxicityClass label="toxic" value={toxicState} />
           <ToxicityClass label="severe toxic" value={severeToxicState} />
           <ToxicityClass label="obscene" value={obsceneState} />

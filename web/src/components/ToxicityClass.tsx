@@ -13,9 +13,9 @@ export default function ToxicityClass(props: { label: string; value: number }) {
   return (
     <div className="w-full flex mb-4 items-center gap-7">
       <div className="w-[20%]">
-        <h3 className={`${fira.className} `}>{props.label}</h3>
+        <h3 className={`${fira.className} text-md`}>{props.label}</h3>
       </div>
-      <div className="w-[75%] flex justify-end border-gray-800 border-2 rounded-md">
+      <div className="w-[70%] flex justify-end border-gray-800 border-2 rounded-md">
         <div
           style={{
             height: "10px",
@@ -27,7 +27,7 @@ export default function ToxicityClass(props: { label: string; value: number }) {
           }}
         ></div>
       </div>
-      <div className="w-[5%] text-right">
+      <div className="w-[10%] text-right">
         <h3 className="text-gray-600">{props.value}%</h3>
       </div>
     </div>

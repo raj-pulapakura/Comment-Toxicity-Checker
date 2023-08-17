@@ -1,5 +1,7 @@
+import { Fira_Code } from "next/font/google";
 import { useState, useEffect } from "react";
-import { fira } from "../app/layout";
+
+const fira = Fira_Code({ subsets: ["latin"] });
 
 export default function ToxicityClass(props: { label: string; value: number }) {
   const [width, setWidth] = useState(0);

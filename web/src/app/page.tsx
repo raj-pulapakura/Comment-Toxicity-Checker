@@ -9,11 +9,10 @@ export default function Home() {
         Comment Toxicity Checker
       </h1>
       <p className="text-center mt-3 text-gray-400">By Raj Pulapakura</p>
-      <section className="w-full flex flex-col justify-center items-center">
+      <section className="w-full flex flex-col justify-center items-center mb-10">
         <div style={{ minWidth: "450px" }} className="w-[70%]">
-          <p className="text-lg text-center mt-4 text-gray-400">
-            Make the world a kinder place by checking your sentences for
-            toxicity.
+          <p className="text-sm text-center mt-4 text-gray-400">
+            Note: the model is only as good as the data it is trained on. Responses may be unintentionally incorrect or disrespectful.
           </p>
           <ToxicityBars />
         </div>

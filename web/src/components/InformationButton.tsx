@@ -1,6 +1,6 @@
 "use client";
 
-import { faArrowRight, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
@@ -14,15 +14,20 @@ export default function InformationButton() {
 
   return (
     <>
-      <FontAwesomeIcon
-        onMouseOver={() => setHovering(true)}
-        onMouseLeave={() => setHovering(false)}
-        onClick={() => setTranslation("translateX(0%)")}
-        icon={faInfoCircle}
-        size="2x"
-        className="absolute top-0 right-0 m-5 hover:cursor-pointer z-10"
-        color={hovering ? "gray" : "white"}
-      />
+    
+      {/* Used SVG instead of FontAwesome because the icon would fill up the screen on loading. */}
+      <svg 
+          onMouseOver={() => setHovering(true)}
+          onMouseLeave={() => setHovering(false)}
+          onClick={() => setTranslation("translateX(0%)")}
+          className="absolute top-0 right-0 m-5 hover:cursor-pointer z-10"
+          color={hovering ? "gray" : "white"}
+          viewBox="0 0 512 512"
+          height={32}
+          width={32}
+      >
+          <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+      </svg>
 
       <section
         className="absolute top-0 right-0 bg-gray-800 z-20 h-screen w-[500px] p-10 overflow-auto"

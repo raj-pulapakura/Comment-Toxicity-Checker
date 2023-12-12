@@ -35,7 +35,6 @@ function tokenize(tokenizer: any, text: string) {
     modelInput = tf.tensor1d(tokens.slice(0, maxLen));
   } else if (tokens.length < maxLen) {
     // pad
-    tf.Tensor;
     modelInput = tf.pad(tokens, [[0, maxLen - tokens.length]]) as tf.Tensor1D;
   }
 

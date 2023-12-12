@@ -42,7 +42,7 @@ Tokenization is performed on the client itself before passing the sentence to th
 
 ## 🤗 Contributions
 
-I welcome any contributions, whether its a brand-new feature or a typo fix.
+Any contributions are welcome, whether its a brand-new feature or a typo fix.
 
 If you would like to see a feature implemented, raise an Issue.
 

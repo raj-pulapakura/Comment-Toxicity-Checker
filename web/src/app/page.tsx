@@ -1,10 +1,10 @@
-import InformationButton from "@/components/InformationButton";
+import IconBar from "@/components/IconBar";
 import ToxicityBars from "@/components/ToxicityBars";
 
 export default function Home() {
   return (
     <main>
-      <InformationButton />
+      <IconBar />
       <h1 className="font-bold text-3xl text-center mt-20">
         Comment Toxicity Checker
       </h1>

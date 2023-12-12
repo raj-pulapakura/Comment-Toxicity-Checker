@@ -4,7 +4,7 @@
 
 ## 📖 How it works
 
-Comment Toxicity Checker is a website which allows you to type in a sentence, and using ML, get a rating on whether that sentence is "toxic".
+[Comment Toxicity Checker](https://comment-toxicity-checker.vercel.app/) is a website which allows you to type in a sentence, and using ML, get a rating on whether that sentence is "toxic".
 
 Specifically, the website tells to what degree your sentence is toxic, by giving it a rating from 0% to 100%. It calculates this rating for six toxicity categories:
 

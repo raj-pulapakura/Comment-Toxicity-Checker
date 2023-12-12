@@ -2,7 +2,7 @@
 
 ![screencapture-comment-toxicity-checker-vercel-app-2023-12-12-23_01_29](https://github.com/raj-pulapakura/Comment-Toxicity-Checker/assets/87762282/5e5ac56b-083f-4341-ac8a-a6ed9d04d304)
 
-## 📖 What is it?
+## 📖 How it works
 
 Comment Toxicity Checker is a website which allows you to type in a sentence, and using ML, get a rating on whether that sentence is "toxic".
 
@@ -40,7 +40,7 @@ Through the `TensorFlowJS` API, the website is able to load the model from this 
 
 Tokenization is performed on the client itself before passing the sentence to the model; this is possible because `TensorFlowLite` saves the tokenizer dictionary - find it at `model/tokenizer_dictionary.json`.
 
-## 🤗 What can you do?
+## 🤗 Contributions
 
 I welcome any contributions, whether its a brand-new feature or a typo fix.
 

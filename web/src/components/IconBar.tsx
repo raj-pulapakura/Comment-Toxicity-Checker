@@ -1,3 +1,5 @@
+"use client";
+
 import {} from "react";
 import SvgButton from "./SvgButton";
 import InformationButton from "./InformationButton";
